@@ -1,24 +1,18 @@
 {
-   "type": "mysql",
-   "host": "begginers-luck.c6olminsalgl.us-east-1.rds.amazonaws.com",
-   "port": 3306,
-   "username": "admin",
-   "password": "wBeNn9n8PiLn8HYEgQUWyoP9",
-   "database": "luck",
-   "synchronize": true,
-   "logging": false,
-   "entities": [
-      "src/entity/**/*.ts"
-   ],
-   "migrations": [
-      "src/migration/**/*.ts"
-   ],
-   "subscribers": [
-      "src/subscriber/**/*.ts"
-   ],
-   "cli": {
-      "entitiesDir": "src/entity",
-      "migrationsDir": "src/migration",
-      "subscribersDir": "src/subscriber"
-   }
+  "type": "mysql",
+  "host": "begginers-luck.c6olminsalgl.us-east-1.rds.amazonaws.com",
+  "port": 3306,
+  "username": "admin",
+  "password": "wBeNn9n8PiLn8HYEgQUWyoP9",
+  "database": "luck",
+  "synchronize": true,
+  "logging": false,
+  "entities": ["src/database/entity/**/*.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "subscribers": ["src/subscriber/**/*.ts"],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
 }

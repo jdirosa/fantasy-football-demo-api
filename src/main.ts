@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
-import "reflect-metadata";
+import { AppModule } from './app/app.module';
+import 'reflect-metadata';
 import { createConnection } from 'typeorm';
 
 async function bootstrap() {

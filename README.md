@@ -30,6 +30,12 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+## Nest CLI Commands
+
+```bash
+$ nest g mo cats to create cats module.
+$ nest g co cats to create cats controller
+```
 
 ## Test
 
