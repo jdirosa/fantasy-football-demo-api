@@ -7,7 +7,7 @@ async function bootstrap() {
   try {
     await createConnection(); // sets up typeorm from ormconfig.json
     const app = await NestFactory.create(AppModule);
-    await app.listen(3000);
+    await app.listen(3100);
   } catch (e) {
     console.log(e);
   }
