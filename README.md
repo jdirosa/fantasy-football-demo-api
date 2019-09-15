@@ -8,12 +8,11 @@ Short Term TODO LIST
 - Cloud Formation Template
 - Docker Container running in ECS 
 - Use token to tag email in message as author id
-- GraphQL 
-- Secure DB password with aws secure params
+- Secure DB password with aws secrets manager
 
 Long Term
 - Allow users to create nicknames
-- Message Board GIFS
+- Message Board GIFS / images
 ```
 ## The Database
 Currently I am using RDS MySQL Free Tier. I had to go in and adjust inbound / outbound rules on security groups to allow outside connections. In a finished product, I would probably docker host the database and only connect in prod. Not there, yet. I am using `TypeORM` to manage the DB from a code first perspective. I am using this because I am more comfortable with SQL, so this is just forcing me to use the opposite approach.
