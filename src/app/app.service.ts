@@ -1,6 +1,4 @@
-import { Injectable, Inject } from '@nestjs/common';
-import { getConnection } from 'typeorm';
-import { Message } from '../database/entity/Message';
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {

@@ -12,7 +12,7 @@ export class MessageService {
     message.message = text;
     message.createdDate = new Date();
 
-    const connection = getConnection(); // TODO: I feel like connection should be injected as it is now basically a dependency
+    const connection = getConnection(); // TODO: connection should be injected as it is now basically a dependency
     const repo = connection.getRepository(Message);
     return await repo.save(message);
   }
